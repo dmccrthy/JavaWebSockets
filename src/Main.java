@@ -1,10 +1,13 @@
-import org.dmccarthy.WebSocket.WebSocketServer;
+import org.dmccarthy.WebSocket;
 
 /**
  * Test websocket functionality
+ * @author Dan McCarthy
+ * @version 1.0.0
  */
 public class Main {
     public static void main(String[] args) {
-        WebSocketServer test = new WebSocketServer(4444);
+        WebSocket test = new WebSocket();
+        test.open();
     }
 }
